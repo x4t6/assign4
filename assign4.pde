@@ -132,11 +132,6 @@ void draw() {
           }//if
         }//for
       }//if
-      
-      //----draw hp bar----//
-      fill(#FF0000);
-      rect(21,19,hpLength,16);
-      image(hpBar,15,15);          
      
       //----enemy collision----//
       if(enemyWave==0){
@@ -355,6 +350,11 @@ void draw() {
         }//if
         enemyX = -300 ;  
       }//if
+      
+      //----draw hp bar----//
+      fill(#FF0000);
+      rect(21,19,hpLength,16);
+      image(hpBar,15,15);    
 
       //----out of hp----//
       if(hpLength <= 0)
